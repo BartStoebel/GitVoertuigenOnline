@@ -9,7 +9,7 @@ package voertuigen;
  *
  * @author Vinnie
  */
-public abstract class Voertuig {
+public abstract class Voertuig implements Privaat, Milieu{
     private String polishouder;
     private String nummerplaat;
     private int pk;
@@ -137,6 +137,15 @@ public abstract class Voertuig {
         Voertuig voertuig = (Voertuig)o;
         return getNummerplaat().equals(voertuig.getNummerplaat());
     }
+    @Override
+    public void geefPrivateData(){
+        
+    }
+    @Override
+    public void geefMilieuData(){
+        
+    }
+    
     
     
    

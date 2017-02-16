@@ -18,11 +18,11 @@ public class StookKetel implements Vervuiler{
     
     @Override
     public String toString(){
-        return super.toString() + ", " + this.CONorm;
+        return super.toString() + ", " + this.getCONorm();
     }
    
     public void toon(){
-        System.out.println("De CONorm voor deze stookketel is: " + this.CONorm);       
+        System.out.println("De CONorm voor deze stookketel is: " + this.getCONorm());       
     }
     
     @Override 
@@ -31,12 +31,26 @@ public class StookKetel implements Vervuiler{
             return false;
         }
         StookKetel stookKetel = (StookKetel)o;
-        return CONorm == stookKetel.CONorm;
+        return getCONorm() == stookKetel.getCONorm();
     }
 
     @Override
     public double berekenVervuiling() {
-        return (double) (CONorm * 100);
+        return (double) (getCONorm() * 100);
+    }
+
+    /**
+     * @return the CONorm
+     */
+    public float getCONorm() {
+        return CONorm;
+    }
+
+    /**
+     * @param CONorm the CONorm to set
+     */
+    public void setCONorm(float CONorm) {
+        this.CONorm = CONorm;
     }
     
 }
