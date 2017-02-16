@@ -9,7 +9,7 @@ package voertuigen;
  *
  * @author Vinnie
  */
-public class PersonenWagen extends Voertuig {
+public class PersonenWagen extends Voertuig implements Vervuiler{
     
     private int aantalDeuren = 4;
     private int aantalPassagiers = 5;
@@ -81,5 +81,10 @@ public class PersonenWagen extends Voertuig {
     @Override
     public double getKyotoScore() {
         return (double) (getGemVerbruik()*getPk()/getAantalPassagiers());
+    }
+
+    @Override
+    public double berekenVervuiling() {
+        return (double)(getKyotoScore() * 5);
     }
 }

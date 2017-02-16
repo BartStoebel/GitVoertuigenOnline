@@ -9,7 +9,7 @@ package voertuigen;
  *
  * @author Vinnie
  */
-public class Vrachtwagen extends Voertuig {
+public class Vrachtwagen extends Voertuig implements Vervuiler {
     private float maxLading  = 10000F;
     
     public Vrachtwagen(){
@@ -62,5 +62,10 @@ public class Vrachtwagen extends Voertuig {
     @Override
     public double getKyotoScore() {
         return (double)(getGemVerbruik()*getPk()/getMaxLading());
+    }
+
+    @Override
+    public double berekenVervuiling() {
+        return (double) (getKyotoScore() * 20);
     }
 }
