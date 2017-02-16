@@ -24,6 +24,8 @@ public class VoertuigMain {
         System.out.println(voertuig2.equals(voertuig));
         System.out.println(voertuig.getKyotoScore());
         System.out.println(voertuig2.getKyotoScore());
+        
+        
     }
     
 }
