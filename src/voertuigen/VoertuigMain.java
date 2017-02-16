@@ -26,6 +26,7 @@ public class VoertuigMain {
         System.out.println(voertuig2.getKyotoScore());
         
         
+        
     }
     
 }
