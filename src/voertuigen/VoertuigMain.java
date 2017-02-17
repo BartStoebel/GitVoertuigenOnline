@@ -15,10 +15,10 @@ public class VoertuigMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        PersonenWagen voertuig = new PersonenWagen("Bart Stoebel", "BGN 863", 03, -1.1F,1.2F , 4,5);
+        PersonenWagen voertuig = new PersonenWagen("Bart Stoebel", "BGN 863", 03, -1.1F, 1.2F , 4,5);
         System.out.println(voertuig.toString());
         voertuig.toon();
-        Vrachtwagen voertuig2 = new Vrachtwagen("Camioneur", "XXX000",325,250000.0F, 16.0F, 2.2F);
+        Vrachtwagen voertuig2 = new Vrachtwagen("Camioneur", "XXX000", 325, 250000.0F, 16.0F, 2.2F);
         System.out.println(voertuig.equals(voertuig2));
         voertuig2.toon();
         System.out.println(voertuig2.equals(voertuig));
