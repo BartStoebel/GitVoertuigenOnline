@@ -31,7 +31,8 @@ public class VoertuigMain {
         vervuiler[2] = new StookKetel(0.2F);
         
         for (Vervuiler vuil : vervuiler){
-            System.out.println("De vervuiling voor deze vervuiler bedraagt: " + vuil.berekenVervuiling());
+            System.out.println("De vervuiling voor deze vervuiler bedraagt: " +
+                    vuil.berekenVervuiling());
         }
         
         Privaat[] privaat = new Privaat [2];
@@ -41,9 +42,5 @@ public class VoertuigMain {
         for (Privaat priv : privaat){
             priv.geefPrivateData();
         }
-        
-        
-        
     }
-    
 }
