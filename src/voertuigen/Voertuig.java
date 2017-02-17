@@ -139,11 +139,12 @@ public abstract class Voertuig implements Privaat, Milieu{
     }
     @Override
     public void geefPrivateData(){
-        
+        System.out.println( getPolishouder()+ ", "  + getNummerplaat() );
     }
     @Override
     public void geefMilieuData(){
-        
+        System.out.println( getKostprijs() + ", " + getPk() + ", " 
+                 + getGemVerbruik()  );
     }
     
     
