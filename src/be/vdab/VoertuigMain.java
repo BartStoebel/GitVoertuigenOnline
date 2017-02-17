@@ -3,7 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package voertuigen;
+package be.vdab;
+
+import be.vdab.voertuigen.PersonenWagen;
+import be.vdab.voertuigen.Vrachtwagen;
+import be.vdab.verwarming.StookKetel;
+import be.vdab.util.Privaat;
+import be.vdab.util.Vervuiler;
 
 /**
  *

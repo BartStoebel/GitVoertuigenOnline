@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package voertuigen;
+package be.vdab.util;
 
 /**
  *
  * @author Vinnie
  */
-public interface Privaat {
-    void geefPrivateData();
+public interface Vervuiler {
+    double berekenVervuiling();
     
 }
